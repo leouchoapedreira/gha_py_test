@@ -30,6 +30,6 @@ jobs:
           pip install -r requirements.txt
       - name: please work
         env:
-          WANDB_API_KEY: ${{ secrets.TEST }}
+          TEST: ${{ secrets.TEST }}
         run: |
           python test.py
